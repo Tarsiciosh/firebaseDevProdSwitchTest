@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func testPressed(_ sender: Any) {
+        Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+          AnalyticsParameterItemID: "item-id-test",
+          AnalyticsParameterItemName: "itme-name-test",
+          AnalyticsParameterContentType: "content-type-test",
+        ])
+        
+    }
+    
 }
 

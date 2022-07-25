@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02D3717350663536F4D72C12 /* Pods_FirebaseDevProdSwitchTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76EAB0F0618DF5366B5DB0A /* Pods_FirebaseDevProdSwitchTest.framework */; };
 		576353B5288F38D7003C5135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576353B4288F38D7003C5135 /* AppDelegate.swift */; };
 		576353B7288F38D7003C5135 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576353B6288F38D7003C5135 /* SceneDelegate.swift */; };
 		576353B9288F38D7003C5135 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576353B8288F38D7003C5135 /* ViewController.swift */; };
 		576353BC288F38D7003C5135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576353BA288F38D7003C5135 /* Main.storyboard */; };
 		576353BE288F38D9003C5135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576353BD288F38D9003C5135 /* Assets.xcassets */; };
 		576353C1288F38D9003C5135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576353BF288F38D9003C5135 /* LaunchScreen.storyboard */; };
+		576353D9288F5232003C5135 /* GoogleService-Info-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 576353C8288F3A22003C5135 /* GoogleService-Info-Dev.plist */; };
+		576353DA288F5235003C5135 /* GoogleService-Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 576353D0288F3DB4003C5135 /* GoogleService-Info-Prod.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		576353BD288F38D9003C5135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		576353C0288F38D9003C5135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		576353C2288F38D9003C5135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576353C8288F3A22003C5135 /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
+		576353D0288F3DB4003C5135 /* GoogleService-Info-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Prod.plist"; sourceTree = "<group>"; };
+		5ADD655BFC51955D38904137 /* Pods-FirebaseDevProdSwitchTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDevProdSwitchTest.release.xcconfig"; path = "Target Support Files/Pods-FirebaseDevProdSwitchTest/Pods-FirebaseDevProdSwitchTest.release.xcconfig"; sourceTree = "<group>"; };
+		7B8222201EE120E971BB7B0B /* Pods-FirebaseDevProdSwitchTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDevProdSwitchTest.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseDevProdSwitchTest/Pods-FirebaseDevProdSwitchTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E76EAB0F0618DF5366B5DB0A /* Pods_FirebaseDevProdSwitchTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseDevProdSwitchTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D3717350663536F4D72C12 /* Pods_FirebaseDevProdSwitchTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				576353B3288F38D7003C5135 /* FirebaseDevProdSwitchTest */,
 				576353B2288F38D7003C5135 /* Products */,
+				B8E2C0ADBC6CBAAAFB6D7471 /* Pods */,
+				596AF97B27D16287BEA68057 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +67,7 @@
 		576353B3288F38D7003C5135 /* FirebaseDevProdSwitchTest */ = {
 			isa = PBXGroup;
 			children = (
+				576353CA288F3A8A003C5135 /* Resources */,
 				576353B4288F38D7003C5135 /* AppDelegate.swift */,
 				576353B6288F38D7003C5135 /* SceneDelegate.swift */,
 				576353B8288F38D7003C5135 /* ViewController.swift */,
@@ -67,6 +79,56 @@
 			path = FirebaseDevProdSwitchTest;
 			sourceTree = "<group>";
 		};
+		576353CA288F3A8A003C5135 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				576353CB288F3AAA003C5135 /* FirebaseConfiguration */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		576353CB288F3AAA003C5135 /* FirebaseConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				576353CC288F3B9E003C5135 /* Dev */,
+				576353CD288F3C2B003C5135 /* Prod */,
+			);
+			path = FirebaseConfiguration;
+			sourceTree = "<group>";
+		};
+		576353CC288F3B9E003C5135 /* Dev */ = {
+			isa = PBXGroup;
+			children = (
+				576353C8288F3A22003C5135 /* GoogleService-Info-Dev.plist */,
+			);
+			path = Dev;
+			sourceTree = "<group>";
+		};
+		576353CD288F3C2B003C5135 /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+				576353D0288F3DB4003C5135 /* GoogleService-Info-Prod.plist */,
+			);
+			path = Prod;
+			sourceTree = "<group>";
+		};
+		596AF97B27D16287BEA68057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E76EAB0F0618DF5366B5DB0A /* Pods_FirebaseDevProdSwitchTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8E2C0ADBC6CBAAAFB6D7471 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B8222201EE120E971BB7B0B /* Pods-FirebaseDevProdSwitchTest.debug.xcconfig */,
+				5ADD655BFC51955D38904137 /* Pods-FirebaseDevProdSwitchTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 576353C5288F38D9003C5135 /* Build configuration list for PBXNativeTarget "FirebaseDevProdSwitchTest" */;
 			buildPhases = (
+				2D809A51F61F613ECD8DD59B /* [CP] Check Pods Manifest.lock */,
 				576353AD288F38D7003C5135 /* Sources */,
 				576353AE288F38D7003C5135 /* Frameworks */,
 				576353AF288F38D7003C5135 /* Resources */,
+				CC1BA091FDD68B11E7D99ADA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +190,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				576353C1288F38D9003C5135 /* LaunchScreen.storyboard in Resources */,
+				576353DA288F5235003C5135 /* GoogleService-Info-Prod.plist in Resources */,
+				576353D9288F5232003C5135 /* GoogleService-Info-Dev.plist in Resources */,
 				576353BE288F38D9003C5135 /* Assets.xcassets in Resources */,
 				576353BC288F38D7003C5135 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D809A51F61F613ECD8DD59B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseDevProdSwitchTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC1BA091FDD68B11E7D99ADA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseDevProdSwitchTest/Pods-FirebaseDevProdSwitchTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseDevProdSwitchTest/Pods-FirebaseDevProdSwitchTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseDevProdSwitchTest/Pods-FirebaseDevProdSwitchTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		576353AD288F38D7003C5135 /* Sources */ = {
@@ -282,6 +390,7 @@
 		};
 		576353C6288F38D9003C5135 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B8222201EE120E971BB7B0B /* Pods-FirebaseDevProdSwitchTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,6 +398,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J4HVETEMJ8;
 				GENERATE_INFOPLIST_FILE = YES;
+				GOOGLE_SERVICE_INFO_NAME = "GoogleService-Info-Dev";
 				INFOPLIST_FILE = FirebaseDevProdSwitchTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -310,6 +420,7 @@
 		};
 		576353C7288F38D9003C5135 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ADD655BFC51955D38904137 /* Pods-FirebaseDevProdSwitchTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,6 +428,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J4HVETEMJ8;
 				GENERATE_INFOPLIST_FILE = YES;
+				GOOGLE_SERVICE_INFO_NAME = "GoogleService-Info-Dev";
 				INFOPLIST_FILE = FirebaseDevProdSwitchTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

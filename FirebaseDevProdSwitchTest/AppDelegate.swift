@@ -6,14 +6,24 @@
 //
 
 import UIKit
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        guard let googleServiceInfoName = Bundle.main.object(forInfoDictionaryKey: "GoogleServiceInfoName") as? String else {
+            assert(false, "Couldn't load info name")
+        }
+        
+        let filePath = Bundle.main.path(forResource: googleServiceInfoName, ofType: "plist")
+       
+        guard let fileopts = FirebaseOptions(contentsOfFile: filePath!)
+          else { assert(false, "Couldn't load config file") }
+        
+        FirebaseApp.configure(options: fileopts)
+        
         return true
     }
 
